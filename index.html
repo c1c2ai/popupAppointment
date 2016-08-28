@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html  ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Book Appointment</title>
+    <script>
+        function popupCenter(url, title, w, h) {
+            var left = (screen.width/2)-(w/2);
+            var top = (screen.height/2)-(h/2);
+            return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
+        }
+    </script>
+   <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular.js"/>-->
+</head>
+<body>
+Book Appointment
+
+<button onclick="popupCenter('http://www.sminq.com', 'myPop1',450,450);">Book Appointment</button>
+<!--Created a dialog box for sminq integration-->
+
+<!--<input type="text" ng-model="name"/>
+<h1>hello {{name}}</h1>-->
+
+</body>
+</html>
